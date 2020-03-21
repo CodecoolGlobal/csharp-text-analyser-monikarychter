@@ -8,13 +8,19 @@ namespace csharp_text_analyser_monikarychter
     {
         private const string Fpath = "tekst.txt";
         private static View view1;
+        // Please use significant names of variables, non 1 character
         private static Iterator I;
 
         static void Main(string[] args)
 
         {
+            // TODO
+            // Please uncomment to create file instance
             
             //FileContent file = new FileContent("test.txt"); 
+            
+            // TODO
+            // Please add both iterators instances creation here
             
             bool showMenu = true;
             while (showMenu)
