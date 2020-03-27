@@ -8,17 +8,20 @@ namespace csharp_text_analyser_monikarychter{
     public class StatisticAnaliysis {
        
         Iterator iterator ;
+        
 
-        public View View1 { get; }
 
-        View view1 = new View();
-        private View v;
+       // public View View1 { get; }
 
-        public StatisticAnaliysis(Iterator iterator,  View view1){
+        //View view1 = new View();
+        //private View v;
+
+        public StatisticAnaliysis(Iterator iterator){
             
             this.iterator = iterator;
             
-            this.View1 = v;
+            
+            //this.View1 = v;
         }
 
 
@@ -27,7 +30,8 @@ namespace csharp_text_analyser_monikarychter{
 
         {
             int i = 0;
-            while(iterator.HasNext()){
+            while(iterator.HasNext())
+            {
                 var item = iterator.MoveNext();
                 if(elems.Contains(item)){
                     i++;
@@ -52,20 +56,19 @@ namespace csharp_text_analyser_monikarychter{
             
 
         }
-     
-        public int Size(){
-           
-         int i = 0;
-            while(iterator.HasNext()){
+
+        public int Size()
+        {
+
+            int i = 0;
+            while (iterator.HasNext())
+            {
                 var item = iterator.MoveNext();
-                  i++;
-                
+                i++;
+
             }
             return i;
+        
         }
-         
-             
-         
-
     }
 }

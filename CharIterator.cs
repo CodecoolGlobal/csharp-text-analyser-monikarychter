@@ -14,12 +14,13 @@ namespace csharp_text_analyser_monikarychter{
 
         public bool HasNext(){
           file.GetLine();
-              return true;
+          return true;
           
         }
         public string MoveNext()
         {
-            var i = file.GetLine();
+            List<string> list = file.GetLine();
+            var i = list;
             return i.ToString(); 
         }
 

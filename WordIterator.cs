@@ -17,14 +17,18 @@ namespace csharp_text_analyser_monikarychter
            var list = file.GetLine();
            return true;
         }
-            
+
         public string MoveNext()
-        {
-            
-            var i = file.GetLine();
-            return i.ToString(); 
+        { 
+           var list = file.GetLine();
+           var v = list.ToString();
+           return v;
         }
+           
+    
             
+        
+    
         public void Remove()
         {
            

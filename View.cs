@@ -10,13 +10,17 @@ namespace csharp_text_analyser_monikarychter
      
 
         
-        public void PrintStr(string str)
-        {
-            if (str is String)
+        public void PrintStr(string elements)
+        {   var i = 0;
+            foreach (var element in elements)
             {
-                throw new ArgumentNullException(nameof(str));
+              if(i> 0){
+                Console.WriteLine(", ");
+               
+            
+              }  
             }
-            return;
+            Console.WriteLine(elements);
         }
 
 
@@ -29,6 +33,11 @@ namespace csharp_text_analyser_monikarychter
         internal static void PrintList(object list)
         {
            list = new List<string>();  
+        }
+
+        internal static void PrintStr(WordIterator iterator)
+        {
+            throw new NotImplementedException();
         }
     }
 }
