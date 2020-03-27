@@ -15,6 +15,7 @@ namespace csharp_text_analyser_monikarychter
         public bool HasNext()
         {
            var list = file.GetLine();
+           //FIXME: returns always true is problematic as can lead to infinite loop
            return true;
         }
 
